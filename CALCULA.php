@@ -1,4 +1,3 @@
-
 <?php
     $numero1 = $_GET["numero1"];
     $numero2 = $_GET["numero2"];
@@ -7,23 +6,21 @@
 
     if ($sinal == "+"){
         $Resultaldo = $numero1 + $numero2;
-        
+            echo " O Resultado é $Resultaldo ";
     }
     elseif ($sinal == "-"){
         $Resultaldo = $numero1 - $numero2;
-        
+            echo " O Resultado é $Resultaldo ";
     }
     elseif ($sinal == "*"){
         $Resultaldo = $numero1 * $numero2;
-        
+            echo " O Resultado é $Resultaldo ";
     }
-    elseif ($sinal == "/"){
-        if ($numero2!= 0){
-            $Resultaldo = $numero1 / $numero2;
-        }
-        else{
-            echo "Não é possível dividir por zero!";
-        }
+    elseif ($sinal == "/" && $numero2 == 0){
+        echo "Não é possível dividir por zero!";  
     }
-    echo " The resultado is $Resultaldo";
-    ?>
+    elseif ($sinal == "/" ){
+        $Resultaldo = $numero1 / $numero2;
+            echo "O resultado é $Resultaldo ";
+    }
+?>
