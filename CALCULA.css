@@ -1,0 +1,22 @@
+
+input{
+    font-size: 25px;
+    width: 335px;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.numero{
+    text-align: end;
+    
+    width: 15%;
+    height: 50px;
+}
+.seletor{
+    align-items: center;
+    justify-content: center;
+    color: red;
+
+}
